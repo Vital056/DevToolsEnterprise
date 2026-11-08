@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>DevToolsEnterprise</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<CommandBarLocation>None</CommandBarLocation>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<ChildItems>
+		<UsualGroup name="ГруппаОтчеты" id="1">
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаОтчетыРасширеннаяПодсказка" id="2"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаИзменения" id="3">
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаИзмененияРасширеннаяПодсказка" id="4"/>
+					<ChildItems>
+						<Button name="ОткрытьИзменения" id="5">
+							<Type>UsualButton</Type>
+							<Representation>PictureAndText</Representation>
+							<DefaultButton>true</DefaultButton>
+							<Width>32</Width>
+							<Height>2</Height>
+							<CommandName>Form.Command.ОткрытьИзменения</CommandName>
+							<ExtendedTooltip name="ОткрытьИзмененияРасширеннаяПодсказка" id="6"/>
+						</Button>
+						<LabelDecoration name="ОписаниеИзменений" id="7">
+							<Width>32</Width>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Какие расширения базы изменяют объект метаданных и что в нем меняют: реквизиты, формы, код модулей.</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ОписаниеИзмененийКонтекстноеМеню" id="8"/>
+							<ExtendedTooltip name="ОписаниеИзмененийРасширеннаяПодсказка" id="9"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаПрава" id="10">
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаПраваРасширеннаяПодсказка" id="11"/>
+					<ChildItems>
+						<Button name="ОткрытьПрава" id="12">
+							<Type>UsualButton</Type>
+							<Representation>PictureAndText</Representation>
+							<Width>32</Width>
+							<Height>2</Height>
+							<CommandName>Form.Command.ОткрытьПрава</CommandName>
+							<ExtendedTooltip name="ОткрытьПраваРасширеннаяПодсказка" id="13"/>
+						</Button>
+						<LabelDecoration name="ОписаниеПрав" id="14">
+							<Width>32</Width>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Права всех ролей сеанса, в том числе ролей расширений, на объект метаданных и его реквизиты.</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ОписаниеПравКонтекстноеМеню" id="15"/>
+							<ExtendedTooltip name="ОписаниеПравРасширеннаяПодсказка" id="16"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаВыгрузка" id="17">
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаВыгрузкаРасширеннаяПодсказка" id="18"/>
+					<ChildItems>
+						<Button name="ОткрытьВыгрузкуРасширений" id="19">
+							<Type>UsualButton</Type>
+							<Representation>PictureAndText</Representation>
+							<Width>32</Width>
+							<Height>2</Height>
+							<CommandName>Form.Command.ОткрытьВыгрузкуРасширений</CommandName>
+							<ExtendedTooltip name="ОткрытьВыгрузкуРасширенийРасширеннаяПодсказка" id="20"/>
+						</Button>
+						<LabelDecoration name="ОписаниеВыгрузки" id="21">
+							<Width>32</Width>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Список всех расширений базы: отмеченные сохраняются файлами .cfe в указанный каталог.</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ОписаниеВыгрузкиКонтекстноеМеню" id="22"/>
+							<ExtendedTooltip name="ОписаниеВыгрузкиРасширеннаяПодсказка" id="23"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:ExternalReportObject.DevToolsEnterprise</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ОткрытьИзменения" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Изменения в расширениях</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть отчет "Изменения в расширениях"</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.GenerateReport</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОткрытьИзменения</Action>
+		</Command>
+		<Command name="ОткрытьПрава" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Роли и права</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть отчет "Роли и права"</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.GenerateReport</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОткрытьПрава</Action>
+		</Command>
+		<Command name="ОткрытьВыгрузкуРасширений" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выгрузка расширений</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выгрузить отмеченные расширения базы в файлы .cfe</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.SaveFile</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОткрытьВыгрузкуРасширений</Action>
+		</Command>
+	</Commands>
+</Form>
