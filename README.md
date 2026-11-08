@@ -104,3 +104,27 @@
   /LoadExternalDataProcessorOrReportFromFiles "src\DevToolsEnterprise.xml" ^
   "build\DevToolsEnterprise.erf" /DisableStartupDialogs
 ```
+
+Скрипт `scripts\build.bat` делает то же без своей базы: при первом запуске создаёт пустую файловую
+базу `build\stub-ib` и собирает отчёт в `build\DevToolsEnterprise.erf`.
+
+## Разработка
+
+| Каталог / файл | Что там |
+|---|---|
+| `src/` | исходники отчёта |
+| `scripts/build.bat` | сборка отчёта и служебной обработки открытия |
+| `scripts/test.bat [база]` | собрать и открыть отчёт в тестовой базе |
+| `scripts/run-1c.bat` | открыть тестовую базу (`-Base`, `-OpenReport`, `-URL`) |
+| `tools/launcher/` | исходники служебной обработки: подключает собранный `.erf` и открывает его форму |
+| `tools/smoke-com.ps1` | проверка серверной части отчёта через COM, без интерфейса |
+| `tools/compare-cfe.ps1` | сверка выгруженных `.cfe` с расширениями базы |
+| `tools/ui.ps1`, `tools/pixelate.ps1` | окна и снимки экрана клиента, подготовка скриншотов |
+| `.v8-project.json.example` | образец реестра тестовых баз (сам `.v8-project.json` в git не попадает) |
+| `.bsl-language-server.json`, `.mcp.json` | BSL Language Server для анализа кода |
+| `openspec/`, `.claude/` | работа по спецификациям OpenSpec в Claude Code (`/opsx:*`) |
+
+Тестовые базы описываются в `.v8-project.json` (формат реестра баз
+[1c-skills](https://github.com/Nikolay-Shirokov/cc-1c-skills)): скопируйте образец и укажите файловые
+базы с расширениями, на которых проверяете отчёт. Скрипты берут базу по `id` или алиасу,
+без параметра — базу `default`.

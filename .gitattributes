@@ -1,2 +1,7 @@
 # Исходники 1С храним как есть, без преобразования переводов строк
 * -text
+
+*.png binary
+*.erf binary
+*.epf binary
+*.cfe binary

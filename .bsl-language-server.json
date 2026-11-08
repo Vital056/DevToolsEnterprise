@@ -1,0 +1,15 @@
+{
+  "$schema": "https://1c-syntax.github.io/bsl-language-server/configuration/schema.json",
+  "language": "ru",
+  "sendErrors": "never",
+  "excludePaths": [
+    "build",
+    "oscript_modules",
+    "**/.git/**"
+  ],
+  "diagnostics": {
+    "computeTrigger": "onSave",
+    "skipSupport": "never",
+    "ordinaryAppSupport": false
+  }
+}

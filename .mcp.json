@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "bsl-language-server": {
+      "command": "${BSL_LS_HOME:-C:/Tools/bsl-language-server}/bsl-language-server.exe",
+      "args": ["mcp"]
+    }
+  }
+}

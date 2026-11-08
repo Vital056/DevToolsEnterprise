@@ -1,0 +1,24 @@
+root = true
+
+[*]
+charset = utf-8
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+[*.{bsl,os}]
+indent_style = tab
+end_of_line = crlf
+
+[*.{json,yml,yaml}]
+indent_style = space
+indent_size = 2
+
+[*.feature]
+indent_style = tab
+end_of_line = crlf
+
+[*.bat]
+end_of_line = crlf
+
+[*.md]
+trim_trailing_whitespace = false
