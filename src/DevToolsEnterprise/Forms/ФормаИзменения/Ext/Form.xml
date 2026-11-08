@@ -16,6 +16,12 @@
 				<CommandName>Form.Command.Сформировать</CommandName>
 				<ExtendedTooltip name="СформироватьРасширеннаяПодсказка" id="2"/>
 			</Button>
+			<Button name="ФормаВыгрузитьРасширения" id="18">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ВыгрузитьРасширения</CommandName>
+				<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+				<ExtendedTooltip name="ФормаВыгрузитьРасширенияРасширеннаяПодсказка" id="19"/>
+			</Button>
 			<Button name="ФормаЗагрузитьВариант" id="3">
 				<Type>CommandBarButton</Type>
 				<Visible>false</Visible>
@@ -69,7 +75,7 @@
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Скрыть только заимствованное</v8:content>
+							<v8:content>Не учитывать заимствованные объекты</v8:content>
 						</v8:item>
 					</Title>
 					<TitleLocation>Right</TitleLocation>
@@ -83,6 +89,11 @@
 					<ContextMenu name="ТолькоИзмененияКонтекстноеМеню" id="13"/>
 					<ExtendedTooltip name="ТолькоИзмененияРасширеннаяПодсказка" id="14"/>
 				</CheckBoxField>
+				<Button name="ВыгрузитьРасширения" id="20">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ВыгрузитьРасширения</CommandName>
+					<ExtendedTooltip name="ВыгрузитьРасширенияРасширеннаяПодсказка" id="21"/>
+				</Button>
 			</ChildItems>
 		</UsualGroup>
 		<SpreadSheetDocumentField name="Результат" id="15">
@@ -130,7 +141,7 @@
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Скрыть только заимствованное</v8:content>
+					<v8:content>Не учитывать заимствованные объекты</v8:content>
 				</v8:item>
 			</Title>
 			<Type>
@@ -147,6 +158,28 @@
 			</Title>
 			<Type>
 				<v8:Type xmlns:mxl="http://v8.1c.ru/8.2/data/spreadsheet">mxl:SpreadsheetDocument</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ВыведенныеРасширения" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выведенные расширения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ОтчетСформирован" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отчет сформирован</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
 			</Type>
 		</Attribute>
 	</Attributes>
@@ -170,6 +203,25 @@
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
 			<Action>Сформировать</Action>
+		</Command>
+		<Command name="ВыгрузитьРасширения" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выгрузить расширения</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть выгрузку расширений в файлы .cfe с отмеченными расширениями, которые выведены в отчет</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.SaveFile</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ВыгрузитьРасширения</Action>
 		</Command>
 	</Commands>
 </Form>
