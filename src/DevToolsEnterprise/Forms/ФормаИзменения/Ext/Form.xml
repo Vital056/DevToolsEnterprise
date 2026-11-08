@@ -36,9 +36,6 @@
 			</Button>
 		</ChildItems>
 	</AutoCommandBar>
-	<Events>
-		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
-	</Events>
 	<ChildItems>
 		<UsualGroup name="ГруппаОтборы" id="7">
 			<Group>Horizontal</Group>
@@ -51,23 +48,24 @@
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Объект метаданных</v8:content>
+							<v8:content>Объекты метаданных</v8:content>
 						</v8:item>
 					</Title>
 					<AutoMaxWidth>false</AutoMaxWidth>
 					<HorizontalStretch>true</HorizontalStretch>
-					<DropListButton>true</DropListButton>
+					<ChoiceButton>true</ChoiceButton>
 					<ClearButton>true</ClearButton>
 					<InputHint>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Пусто - все объекты всех расширений. Начните вводить имя или синоним</v8:content>
+							<v8:content>Пусто - все объекты всех расширений. Несколько объектов - через запятую или кнопкой «...»</v8:content>
 						</v8:item>
 					</InputHint>
 					<ContextMenu name="ПолноеИмяОбъектаКонтекстноеМеню" id="10"/>
 					<ExtendedTooltip name="ПолноеИмяОбъектаРасширеннаяПодсказка" id="11"/>
 					<Events>
 						<Event name="AutoComplete">ПолноеИмяОбъектаАвтоПодбор</Event>
+						<Event name="StartChoice">ПолноеИмяОбъектаНачалоВыбора</Event>
 					</Events>
 				</InputField>
 				<CheckBoxField name="ТолькоИзменения" id="12">
@@ -126,7 +124,7 @@
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Объект метаданных</v8:content>
+					<v8:content>Объекты метаданных</v8:content>
 				</v8:item>
 			</Title>
 			<Type>

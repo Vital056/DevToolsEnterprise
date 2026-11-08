@@ -28,13 +28,13 @@
 							<Type>UsualButton</Type>
 							<Representation>PictureAndText</Representation>
 							<DefaultButton>true</DefaultButton>
-							<Width>32</Width>
+							<Width>28</Width>
 							<Height>2</Height>
 							<CommandName>Form.Command.ОткрытьИзменения</CommandName>
 							<ExtendedTooltip name="ОткрытьИзмененияРасширеннаяПодсказка" id="6"/>
 						</Button>
 						<LabelDecoration name="ОписаниеИзменений" id="7">
-							<Width>32</Width>
+							<Width>28</Width>
 							<Title formatted="false">
 								<v8:item>
 									<v8:lang>ru</v8:lang>
@@ -43,6 +43,33 @@
 							</Title>
 							<ContextMenu name="ОписаниеИзмененийКонтекстноеМеню" id="8"/>
 							<ExtendedTooltip name="ОписаниеИзмененийРасширеннаяПодсказка" id="9"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаРасширение" id="24">
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаРасширениеРасширеннаяПодсказка" id="25"/>
+					<ChildItems>
+						<Button name="ОткрытьРасширение" id="26">
+							<Type>UsualButton</Type>
+							<Representation>PictureAndText</Representation>
+							<Width>28</Width>
+							<Height>2</Height>
+							<CommandName>Form.Command.ОткрытьРасширение</CommandName>
+							<ExtendedTooltip name="ОткрытьРасширениеРасширеннаяПодсказка" id="27"/>
+						</Button>
+						<LabelDecoration name="ОписаниеРасширения" id="28">
+							<Width>28</Width>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Что делает выбранное расширение: какие объекты добавляет, какие изменяет и что в них меняет, какие только заимствует.</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ОписаниеРасширенияКонтекстноеМеню" id="29"/>
+							<ExtendedTooltip name="ОписаниеРасширенияРасширеннаяПодсказка" id="30"/>
 						</LabelDecoration>
 					</ChildItems>
 				</UsualGroup>
@@ -55,13 +82,13 @@
 						<Button name="ОткрытьПрава" id="12">
 							<Type>UsualButton</Type>
 							<Representation>PictureAndText</Representation>
-							<Width>32</Width>
+							<Width>28</Width>
 							<Height>2</Height>
 							<CommandName>Form.Command.ОткрытьПрава</CommandName>
 							<ExtendedTooltip name="ОткрытьПраваРасширеннаяПодсказка" id="13"/>
 						</Button>
 						<LabelDecoration name="ОписаниеПрав" id="14">
-							<Width>32</Width>
+							<Width>28</Width>
 							<Title formatted="false">
 								<v8:item>
 									<v8:lang>ru</v8:lang>
@@ -82,13 +109,13 @@
 						<Button name="ОткрытьВыгрузкуРасширений" id="19">
 							<Type>UsualButton</Type>
 							<Representation>PictureAndText</Representation>
-							<Width>32</Width>
+							<Width>28</Width>
 							<Height>2</Height>
 							<CommandName>Form.Command.ОткрытьВыгрузкуРасширений</CommandName>
 							<ExtendedTooltip name="ОткрытьВыгрузкуРасширенийРасширеннаяПодсказка" id="20"/>
 						</Button>
 						<LabelDecoration name="ОписаниеВыгрузки" id="21">
-							<Width>32</Width>
+							<Width>28</Width>
 							<Title formatted="false">
 								<v8:item>
 									<v8:lang>ru</v8:lang>
@@ -168,6 +195,25 @@
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
 			<Action>ОткрытьВыгрузкуРасширений</Action>
+		</Command>
+		<Command name="ОткрытьРасширение" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Расширение и вид изменения</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть отчет "Расширение и вид изменения"</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.GenerateReport</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОткрытьРасширение</Action>
 		</Command>
 	</Commands>
 </Form>

@@ -32,8 +32,10 @@
 		<ChildObjects>
 			<Form>Форма</Form>
 			<Form>ФормаИзменения</Form>
+			<Form>ФормаРасширение</Form>
 			<Form>ФормаПрава</Form>
 			<Form>ФормаВыгрузкаРасширений</Form>
+			<Form>ФормаВыбораОбъектов</Form>
 		</ChildObjects>
 	</ExternalReport>
 </MetaDataObject>
